@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: #0079BF;
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0067A3;
+    height: 55px;
+    align-items: center;
+}
+
+.header_logo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.header_profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_image_circle{
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.header_photo_profile{
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.header_open{
+    margin-right: 22px;
+}
+
+.wrapper_main{
+    margin-bottom: 80px;
+    min-height: 86vh;
+}
+
+.flex_elements{
+    position: relative;
+    display: flex;
+    justify-content: center;   
+    align-items: flex-start;
+}
+
+/* BacklorCard */
+
+.backlog{
+    width: 282px;
+    background: #EBECF0;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+
+.backlog_title{
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.backlog_data{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+.backlog_text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.backlog_btn_AddCard{
+    margin-left: 12px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.backlog_btn_AddCard.active{
+    display: none;
+}
+
+.backlog_btn_submit{
+    display: none;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 12px;
+    background-color:  #0079BF;
+    color: #FFFFFF;
+    width: 102px;
+    height: 29px;
+    margin-bottom: 8px;
+}
+
+.backlog_btn_submit.active{
+    display: block;
+}
+
+.backlog_message{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    border: 0;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: none;
+    font-size: 15px;
+}
+
+.backlog_message.active{
+    display: block;
+}
+
+/* ReadyCard */
+
+.Ready{
+    width: 282px;
+    background: #EBECF0;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+
+.Ready_title{
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.Ready_data{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+.Ready_text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.Ready_btn_AddCard{
+    display: block;
+    margin-left: 12px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Ready_btn_AddCard.active{
+    display: none;
+}
+
+.Ready_btn_submit{
+    display: none;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 12px;
+    background-color:  #0079BF;
+    color: #FFFFFF;
+    width: 102px;
+    height: 29px;
+    margin-bottom: 8px;
+}
+
+.Ready_btn_submit.active{
+    display: block;
+}
+
+.Ready_message{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    border: 0;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: none;
+    font-size: 15px;
+}
+
+.Ready_message.active{
+    display: block;
+}
+
+/* Progres */
+
+.Progres{
+    width: 282px;
+    background: #EBECF0;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+
+.Progres_title{
+    margin-left: 12px;
+    margin-top: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.Progres_data{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+.Progres_text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.Progres_btn_AddCard{
+    display: block;
+    margin-left: 12px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Progres_btn_AddCard.active{
+    display: none;
+}
+.Progres_btn_submit{
+    display: none;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 12px;
+    background-color:  #0079BF;
+    color: #FFFFFF;
+    width: 102px;
+    height: 29px;
+    margin-bottom: 8px;
+}
+
+.Progres_btn_submit.active{
+    display: block;
+}
+
+.Progres_message{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    border: 0;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: none;
+    font-size: 15px;
+}
+
+.Progres_message.active{
+    display: block;
+}
+
+/* Finished */
+
+.Finished{
+    width: 282px;
+    background: #EBECF0;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+
+.Finished_title{
+    margin-left: 12px;
+    margin-top: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.Finished_data{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.Finished_text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.Finished_btn_AddCard{
+    display: block;
+    margin-left: 12px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Finished_btn_AddCard.active{
+    display: none;
+}
+.Finished_btn_submit{
+    display: none;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 12px;
+    background-color:  #0079BF;
+    color: #FFFFFF;
+    width: 102px;
+    height: 29px;
+    margin-bottom: 8px;
+}
+
+.Finished_btn_submit.active{
+    display: block;
+}
+
+.Finished_message{
+    width: 258px;
+    background-color:  #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    border: 0;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: none;
+    font-size: 15px;
+}
+
+.Finished_message.active{
+    display: block;
+}
+
+.img_delete{
+    position: relative;
+    width: 15px;
+    margin-left: 5px;
+    top: 2px;
+    transition: background .2s linear;
+    border-radius: 50%;
+}
+
+.img_delete:hover{
+    background: rgb(189, 118, 118);
+}
+
+a.style_img{
+    width: 15px;
+}
+
+
+/* FOOTER */
+
+.wrapper_footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background-color: #0067A3;
+}
+
+.footer_flex_elements{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_finished{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer_active{
+    margin-right: 20px;
+    margin-left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer_name_year{
+    display: flex;
+    float: right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-right: 18px;
+}
